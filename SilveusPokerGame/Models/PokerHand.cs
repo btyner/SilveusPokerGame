@@ -128,10 +128,10 @@ namespace SilveusPokerGame.Models
                     if (hand.IsValid(handType)) // Is hand one of the valid types?
                     {
                         int compareHands = 0, compareCards = 0;
-                        if (winners.Count == 0 // Are there any winning hands
-                         || (compareHands = winningType.CompareTo(handType)) > 0 // Which type of hand?
-                         || compareHands == 0
-                          && (compareCards = hand.CompareTo(hands[winners[0]])) >= 0)
+                        if (winners.Count == 0 // Are there any winning hands? If no winning hands, add one.
+                         || (compareHands = winningType.CompareTo(handType)) > 0 // Proceed to next check if current handType does not beat winning handType. If it does, add to winners.
+                         || compareHands == 0 // Proceed to next check if hands are equal. If current hand is worse than winning hand, do nothing.
+                          && (compareCards = hand.CompareTo(hands[winners[0]])) >= 0) // Check to see if current hand beats winning hand. New Winner?
                         {
                             if (compareHands > 0 || compareCards > 0) winners.Clear();
                             winners.Add(name);
