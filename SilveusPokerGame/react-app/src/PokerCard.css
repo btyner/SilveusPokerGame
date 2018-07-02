@@ -1,0 +1,8 @@
+﻿.card-face {
+    margin: 10px;
+    flex-grow: 1;
+    list-style:none;
+}
+.card-face img {
+    border:solid 2px white;
+}

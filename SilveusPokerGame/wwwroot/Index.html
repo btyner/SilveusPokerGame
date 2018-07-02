@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Silveus Poker Game</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="assets/uikit/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="assets/uikit/js/uikit.min.js"></script>
+    <script src="assets/uikit/js/uikit-icons.min.js"></script>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+
+</head>
+    <body>
+        <div>
+            <h1>Poker Game</h1>
+            <div className="form-group">
+                <label htmlFor="txtP1Name">Player 1 Name</label>
+                <input type="text" className="form-control" id="txtP1Name" name="txtP1Name" aria-describedby="p1NameHelp" placeholder="Enter Player 1's Name" value={this.state.txtP1Name} onChange={onChangeInput(props)} />
+                <small id="p1NameHelp" className="form-text text-muted">Enter player one's name.'</small>
+            </div>
+            <div className="form-group">
+                <label htmlFor="txtP2Name">Player 2 Name</label>
+                <input type="text" className="form-control" id="txtP2Name" name="txtP2Name" aria-describedby="p2NameHelp" placeholder="Enter Player 2's Name" value={this.state.txtP2Name} onChange={onChangeInput(props)} />
+                <small id="p2NameHelp" className="form-text text-muted">Enter player two's name.'</small>
+            </div>
+            <button onClick={ ()=> { this.startPokerGame() } } className="btn btn-primary">Submit</button>
+        </div>
+    </body>
+</html>

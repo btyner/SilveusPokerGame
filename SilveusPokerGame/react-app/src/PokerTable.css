@@ -1,0 +1,22 @@
+﻿.poker-table {
+    width: 1000px;
+    margin: 30px auto;
+}
+.poker-table h3 {
+    padding-top:10px;
+}
+.poker-table ul {
+    display: flex;
+    flex-flow: row;
+    margin:0;
+    padding:0;
+}
+.winner h3 {
+    background-color: darkgreen;
+    color: white;
+    padding-top: 10px;
+}
+.winner ul li img {
+    border-color: green !important;
+    border-radius: 10px;
+}

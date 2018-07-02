@@ -1,0 +1,290 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Poker\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="react-app\public\assets\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Poker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Index.html" />
+    <Content Remove="wwwroot\assets\js\silveus-poker-game.js" />
+    <Content Remove="wwwroot\registerServiceWorker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="react-app\public\assets\.DS_Store" />
+    <None Remove="react-app\public\assets\cards\10_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\10_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\10_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\10_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\2_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\2_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\2_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\2_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\3_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\3_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\3_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\3_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\4_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\4_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\4_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\4_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\5_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\5_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\5_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\5_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\6_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\6_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\6_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\6_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\7_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\7_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\7_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\7_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\8_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\8_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\8_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\8_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\9_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\9_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\9_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\9_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\ace_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\ace_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\ace_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\ace_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\jack_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\jack_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\jack_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\jack_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\king_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\king_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\king_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\king_of_spades.png" />
+    <None Remove="react-app\public\assets\cards\queen_of_clubs.png" />
+    <None Remove="react-app\public\assets\cards\queen_of_diamonds.png" />
+    <None Remove="react-app\public\assets\cards\queen_of_hearts.png" />
+    <None Remove="react-app\public\assets\cards\queen_of_spades.png" />
+    <None Remove="react-app\public\assets\uikit\css\uikit.css" />
+    <None Remove="react-app\public\assets\uikit\css\uikit.min.css" />
+    <None Remove="react-app\public\assets\uikit\css\uikit-rtl.css" />
+    <None Remove="react-app\public\assets\uikit\css\uikit-rtl.min.css" />
+    <None Remove="react-app\public\assets\uikit\js\uikit.js" />
+    <None Remove="react-app\public\assets\uikit\js\uikit.min.js" />
+    <None Remove="react-app\public\assets\uikit\js\uikit-icons.js" />
+    <None Remove="react-app\public\assets\uikit\js\uikit-icons.min.js" />
+    <None Remove="react-app\public\assets\version.txt" />
+    <None Remove="react-app\build\assets\cards\10_of_clubs.png" />
+    <None Remove="react-app\build\assets\cards\10_of_clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Index.html" />
+    <None Include="wwwroot\registerServiceWorker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="react-app\public\assets\.DS_Store">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\10_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\10_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\10_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\10_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\2_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\2_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\2_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\2_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\3_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\3_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\3_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\3_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\4_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\4_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\4_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\4_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\5_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\5_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\5_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\5_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\6_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\6_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\6_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\6_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\7_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\7_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\7_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\7_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\8_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\8_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\8_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\8_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\9_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\9_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\9_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\9_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\ace_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\ace_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\ace_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\ace_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\jack_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\jack_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\jack_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\jack_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\king_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\king_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\king_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\king_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\queen_of_clubs.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\queen_of_diamonds.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\queen_of_hearts.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\cards\queen_of_spades.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\css\uikit.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\css\uikit.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\css\uikit-rtl.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\css\uikit-rtl.min.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\js\uikit.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\js\uikit.min.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\js\uikit-icons.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\uikit\js\uikit-icons.min.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="react-app\public\assets\version.txt">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
